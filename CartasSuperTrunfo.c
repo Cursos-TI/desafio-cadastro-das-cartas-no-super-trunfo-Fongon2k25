@@ -11,6 +11,8 @@ int main (){
     int turisticos;
     float dp;
     float pibpc;
+    float poder1;
+
 
 
     printf ("Digite o Estado: \n");
@@ -36,6 +38,7 @@ int main (){
 
     dp = populacao / area;
     pibpc = pib / populacao;
+    poder1 = populacao + area + turisticos + dp + pibpc;
 
     printf("Carta 1\n");
     printf("O estado é: %s\n", &estado);
@@ -47,6 +50,7 @@ int main (){
     printf("Quantidade de pontos turísticos é: %d\n", turisticos);
     printf("A densidade popupacional é: %.2f\n", dp);
     printf("O PIB per capita é: %.2f\n", pibpc);
+    printf ("O poder da cidade 1 é: %.2f\n", poder1);
 
 
     char estado02;
@@ -58,6 +62,7 @@ int main (){
     int turisticos02;
     float dp02;
     float pibpc02;
+    float poder2;
 
 
     printf ("Digite o Estado: \n");
@@ -83,6 +88,7 @@ int main (){
 
     dp02 = populacao02 / area02;
     pibpc02 = pib02 / populacao02;
+    poder2 = populacao02 + area02+ turisticos02 + dp02 + pibpc02;
 
     printf("Carta 2\n");
     printf("O estado é: %s\n", &estado02);
@@ -94,6 +100,17 @@ int main (){
     printf("Quantidade de pontos turísticos é: %d\n", turisticos02);
     printf("A densidade popupacional é: %.2f\n", dp02);
     printf("O PIB per capita é: %.2f\n", pibpc02);
+    printf ("O poder da cidade 2 é: %.2f\n", poder2);
+
+
+    printf ("População 1 é maior que população 2? %d\n", populacao > populacao02);
+    printf ("A Área km² da cidade 1 é maior que a Área km² da cidade 2? %d\n", area > area02);
+    printf ("O PIB da cidade 1 é maior que que o PIB da cidade 2? %d\n", pib > pib02);
+    printf ("A quantidade de pontos turisticos da cidade  1 é maior que da cidade 2? %d\n", turisticos > turisticos02);
+    printf ("A densidade popupacional da cidade 1 é menor que da cidade 2? %d\n", dp < dp02);
+    printf ("O PIB per capita da cidade 1 é maior que da cidade 2? %d\n", pibpc > pibpc02);
+    printf ("O poder da carta 1 é maior que da carta 2: %d\n", poder1 > poder2);
+
 
 
 
